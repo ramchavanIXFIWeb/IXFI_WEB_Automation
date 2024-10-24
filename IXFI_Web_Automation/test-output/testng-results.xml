@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="43" passed="41" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-24T12:50:18 IST" name="Suite" finished-at="2024-10-24T13:05:02 IST" duration-ms="884234">
+    <groups>
+    </groups>
+    <test started-at="2024-10-24T12:50:18 IST" name="Test_All" finished-at="2024-10-24T13:05:02 IST" duration-ms="884234">
+      <class name="com.ixfi.testcases.SignUpPageTest">
+        <test-method is-config="true" signature="loadConfiguration()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:50:16 IST" name="loadConfiguration" finished-at="2024-10-24T12:50:18 IST" duration-ms="1558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfiguration -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:50:18 IST" name="setup" finished-at="2024-10-24T12:50:34 IST" duration-ms="15757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:50:34 IST" name="setUpTest" finished-at="2024-10-24T12:50:34 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCreateAccountButtonRemainsDisabledUntilTermsAndConditionsAcceptanceTest()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:50:34 IST" name="verifyCreateAccountButtonRemainsDisabledUntilTermsAndConditionsAcceptanceTest" finished-at="2024-10-24T12:50:39 IST" duration-ms="4665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateAccountButtonRemainsDisabledUntilTermsAndConditionsAcceptanceTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:50:39 IST" name="tearDown" finished-at="2024-10-24T12:50:40 IST" duration-ms="1433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:50:40 IST" name="setup" finished-at="2024-10-24T12:50:52 IST" duration-ms="11656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:50:52 IST" name="setUpTest" finished-at="2024-10-24T12:50:52 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCreateAccountByEmailFunctionalityTest()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:50:52 IST" name="verifyCreateAccountByEmailFunctionalityTest" finished-at="2024-10-24T12:51:04 IST" duration-ms="11973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateAccountByEmailFunctionalityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:04 IST" name="tearDown" finished-at="2024-10-24T12:51:04 IST" duration-ms="764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:04 IST" name="setup" finished-at="2024-10-24T12:51:15 IST" duration-ms="10158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:15 IST" name="setUpTest" finished-at="2024-10-24T12:51:15 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCreateAccountByPhoneFunctionalityTest()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:15 IST" name="verifyCreateAccountByPhoneFunctionalityTest" finished-at="2024-10-24T12:51:26 IST" duration-ms="11037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateAccountByPhoneFunctionalityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:26 IST" name="tearDown" finished-at="2024-10-24T12:51:26 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:26 IST" name="setup" finished-at="2024-10-24T12:51:34 IST" duration-ms="7947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:34 IST" name="setUpTest" finished-at="2024-10-24T12:51:34 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatUserIsNavigatedToLoginPageAfterClickinOnLoginLinkPresentOnSignUpPageTest()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:34 IST" name="verifyThatUserIsNavigatedToLoginPageAfterClickinOnLoginLinkPresentOnSignUpPageTest" finished-at="2024-10-24T12:51:43 IST" duration-ms="9063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserIsNavigatedToLoginPageAfterClickinOnLoginLinkPresentOnSignUpPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:43 IST" name="tearDown" finished-at="2024-10-24T12:51:44 IST" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:44 IST" name="setup" finished-at="2024-10-24T12:51:50 IST" duration-ms="6284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:50 IST" name="setUpTest" finished-at="2024-10-24T12:51:50 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatUserIsNavigatedToSignUpPageAfterClickingOnRegisterButton()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:50 IST" name="verifyThatUserIsNavigatedToSignUpPageAfterClickingOnRegisterButton" finished-at="2024-10-24T12:51:53 IST" duration-ms="3147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserIsNavigatedToSignUpPageAfterClickingOnRegisterButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T12:51:53 IST" name="tearDown" finished-at="2024-10-24T12:51:53 IST" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ixfi.testcases.SignUpPageTest@69453e37]" started-at="2024-10-24T13:05:02 IST" name="afterSuite" finished-at="2024-10-24T13:05:03 IST" duration-ms="803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.ixfi.testcases.SignUpPageTest -->
+      <class name="com.ixfi.testcases.IndexPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:53:37 IST" name="setup" finished-at="2024-10-24T12:53:46 IST" duration-ms="8420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:53:46 IST" name="setUpTest" finished-at="2024-10-24T12:53:46 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="validateMarketTrendGainersTableDataTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:53:46 IST" name="validateMarketTrendGainersTableDataTest" finished-at="2024-10-24T12:53:51 IST" duration-ms="4997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMarketTrendGainersTableDataTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:53:51 IST" name="tearDown" finished-at="2024-10-24T12:53:51 IST" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:53:51 IST" name="setup" finished-at="2024-10-24T12:54:01 IST" duration-ms="9278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:54:01 IST" name="setUpTest" finished-at="2024-10-24T12:54:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="validateMarketTrendLosersTableDataTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:54:01 IST" name="validateMarketTrendLosersTableDataTest" finished-at="2024-10-24T12:54:06 IST" duration-ms="5004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMarketTrendLosersTableDataTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:54:06 IST" name="tearDown" finished-at="2024-10-24T12:54:07 IST" duration-ms="919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:54:07 IST" name="setup" finished-at="2024-10-24T12:54:13 IST" duration-ms="6943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:54:13 IST" name="setUpTest" finished-at="2024-10-24T12:54:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="validateMarketTrendTopTableDataTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:54:13 IST" name="validateMarketTrendTopTableDataTest" finished-at="2024-10-24T12:54:18 IST" duration-ms="4609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMarketTrendTopTableDataTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:54:18 IST" name="tearDown" finished-at="2024-10-24T12:54:19 IST" duration-ms="908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:54:19 IST" name="setup" finished-at="2024-10-24T12:54:27 IST" duration-ms="8460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:54:27 IST" name="setUpTest" finished-at="2024-10-24T12:54:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyDetailsButtonFromTheMarketTablesActionColumnIsClickableAndOpenItInNewTab()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:54:27 IST" name="verifyDetailsButtonFromTheMarketTablesActionColumnIsClickableAndOpenItInNewTab" finished-at="2024-10-24T12:57:01 IST" duration-ms="153980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDetailsButtonFromTheMarketTablesActionColumnIsClickableAndOpenItInNewTab -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:02 IST" name="tearDown" finished-at="2024-10-24T12:57:05 IST" duration-ms="3383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:05 IST" name="setup" finished-at="2024-10-24T12:57:14 IST" duration-ms="9481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:14 IST" name="setUpTest" finished-at="2024-10-24T12:57:14 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyDownloadButtonIsClickableUnderHamburgerMenu()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:14 IST" name="verifyDownloadButtonIsClickableUnderHamburgerMenu" finished-at="2024-10-24T12:57:19 IST" duration-ms="4401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDownloadButtonIsClickableUnderHamburgerMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:19 IST" name="tearDown" finished-at="2024-10-24T12:57:19 IST" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:19 IST" name="setup" finished-at="2024-10-24T12:57:27 IST" duration-ms="8267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:27 IST" name="setUpTest" finished-at="2024-10-24T12:57:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyIXFIWebPageTitle()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:27 IST" name="verifyIXFIWebPageTitle" finished-at="2024-10-24T12:57:27 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIXFIWebPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:27 IST" name="tearDown" finished-at="2024-10-24T12:57:28 IST" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:28 IST" name="setup" finished-at="2024-10-24T12:57:36 IST" duration-ms="8039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:36 IST" name="setUpTest" finished-at="2024-10-24T12:57:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyLangaugeButtonIsClickableUnderHamburgerMenuAndUserIsAbleToExtractTheLanguagesAndClickOnThem()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:36 IST" name="verifyLangaugeButtonIsClickableUnderHamburgerMenuAndUserIsAbleToExtractTheLanguagesAndClickOnThem" finished-at="2024-10-24T12:57:47 IST" duration-ms="11178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLangaugeButtonIsClickableUnderHamburgerMenuAndUserIsAbleToExtractTheLanguagesAndClickOnThem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:47 IST" name="tearDown" finished-at="2024-10-24T12:57:48 IST" duration-ms="1004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:48 IST" name="setup" finished-at="2024-10-24T12:57:58 IST" duration-ms="9925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginButtonIsClickable()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:58 IST" name="verifyLoginButtonIsClickable" finished-at="2024-10-24T12:57:59 IST" duration-ms="782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginButtonIsClickable -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:58 IST" name="setUpTest" finished-at="2024-10-24T12:57:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:59 IST" name="tearDown" finished-at="2024-10-24T12:57:59 IST" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:57:59 IST" name="setup" finished-at="2024-10-24T12:58:07 IST" duration-ms="7854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginButtonIsClickableAndUserIsNavigatedToLoginPage()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:07 IST" name="verifyLoginButtonIsClickableAndUserIsNavigatedToLoginPage" finished-at="2024-10-24T12:58:12 IST" duration-ms="4412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginButtonIsClickableAndUserIsNavigatedToLoginPage -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:07 IST" name="setUpTest" finished-at="2024-10-24T12:58:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:12 IST" name="tearDown" finished-at="2024-10-24T12:58:12 IST" duration-ms="632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:12 IST" name="setup" finished-at="2024-10-24T12:58:20 IST" duration-ms="8152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyPresenceOfIxfiLogo()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:20 IST" name="verifyPresenceOfIxfiLogo" finished-at="2024-10-24T12:58:20 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceOfIxfiLogo -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:20 IST" name="setUpTest" finished-at="2024-10-24T12:58:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:20 IST" name="tearDown" finished-at="2024-10-24T12:58:21 IST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:21 IST" name="setup" finished-at="2024-10-24T12:58:28 IST" duration-ms="7176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:28 IST" name="setUpTest" finished-at="2024-10-24T12:58:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySignUpButtonIsClickable()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:28 IST" name="verifySignUpButtonIsClickable" finished-at="2024-10-24T12:58:28 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpButtonIsClickable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:28 IST" name="tearDown" finished-at="2024-10-24T12:58:29 IST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:29 IST" name="setup" finished-at="2024-10-24T12:58:37 IST" duration-ms="7940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyThatBottomSectionsDownloadAppWillOpenInNewTab()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:37 IST" name="verifyThatBottomSectionsDownloadAppWillOpenInNewTab" finished-at="2024-10-24T12:58:52 IST" duration-ms="15333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatBottomSectionsDownloadAppWillOpenInNewTab -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:37 IST" name="setUpTest" finished-at="2024-10-24T12:58:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:52 IST" name="tearDown" finished-at="2024-10-24T12:58:53 IST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:58:53 IST" name="setup" finished-at="2024-10-24T12:59:01 IST" duration-ms="8187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:01 IST" name="setUpTest" finished-at="2024-10-24T12:59:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatCurrencyButtonIsClickableUnderHamburgerMenuAndUserIsAbleToSelectTheCurrency()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:01 IST" name="verifyThatCurrencyButtonIsClickableUnderHamburgerMenuAndUserIsAbleToSelectTheCurrency" finished-at="2024-10-24T12:59:12 IST" duration-ms="11305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatCurrencyButtonIsClickableUnderHamburgerMenuAndUserIsAbleToSelectTheCurrency -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:12 IST" name="tearDown" finished-at="2024-10-24T12:59:13 IST" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:13 IST" name="setup" finished-at="2024-10-24T12:59:21 IST" duration-ms="7789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:21 IST" name="setUpTest" finished-at="2024-10-24T12:59:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatStartTradingNowButtonIsClickableAndUserIsNavigatedToTradePage()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:21 IST" name="verifyThatStartTradingNowButtonIsClickableAndUserIsNavigatedToTradePage" finished-at="2024-10-24T12:59:25 IST" duration-ms="4219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatStartTradingNowButtonIsClickableAndUserIsNavigatedToTradePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:25 IST" name="tearDown" finished-at="2024-10-24T12:59:25 IST" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:25 IST" name="setup" finished-at="2024-10-24T12:59:34 IST" duration-ms="8555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:34 IST" name="setUpTest" finished-at="2024-10-24T12:59:34 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatTopSectionsDownloadAppWillOpenInNewTab()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:34 IST" name="verifyThatTopSectionsDownloadAppWillOpenInNewTab" finished-at="2024-10-24T12:59:41 IST" duration-ms="7135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatTopSectionsDownloadAppWillOpenInNewTab -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:41 IST" name="tearDown" finished-at="2024-10-24T12:59:41 IST" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:41 IST" name="setup" finished-at="2024-10-24T12:59:49 IST" duration-ms="7225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:49 IST" name="setUpTest" finished-at="2024-10-24T12:59:49 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatUserIsAbleToClickOnCompleteTaskSectionAndAbleToNavigateToTheRewardsProgramTaskCenterPage()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:49 IST" name="verifyThatUserIsAbleToClickOnCompleteTaskSectionAndAbleToNavigateToTheRewardsProgramTaskCenterPage" finished-at="2024-10-24T12:59:52 IST" duration-ms="3345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserIsAbleToClickOnCompleteTaskSectionAndAbleToNavigateToTheRewardsProgramTaskCenterPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:52 IST" name="tearDown" finished-at="2024-10-24T12:59:52 IST" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T12:59:52 IST" name="setup" finished-at="2024-10-24T13:00:01 IST" duration-ms="8228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:01 IST" name="setUpTest" finished-at="2024-10-24T13:00:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatUserIsAbleToClickOnGetFreeCryptoSectionAndAbleToNavigateToTheRewardsProgramPage()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:01 IST" name="verifyThatUserIsAbleToClickOnGetFreeCryptoSectionAndAbleToNavigateToTheRewardsProgramPage" finished-at="2024-10-24T13:00:08 IST" duration-ms="7768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserIsAbleToClickOnGetFreeCryptoSectionAndAbleToNavigateToTheRewardsProgramPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:08 IST" name="tearDown" finished-at="2024-10-24T13:00:09 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:09 IST" name="setup" finished-at="2024-10-24T13:00:16 IST" duration-ms="7224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:16 IST" name="setUpTest" finished-at="2024-10-24T13:00:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatUserIsAbleToClickOnJoinIXFISectionAndAbleToNavigateToTheSignUpPage()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:16 IST" name="verifyThatUserIsAbleToClickOnJoinIXFISectionAndAbleToNavigateToTheSignUpPage" finished-at="2024-10-24T13:00:20 IST" duration-ms="4124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserIsAbleToClickOnJoinIXFISectionAndAbleToNavigateToTheSignUpPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:20 IST" name="tearDown" finished-at="2024-10-24T13:00:21 IST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:21 IST" name="setup" finished-at="2024-10-24T13:00:28 IST" duration-ms="7629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:28 IST" name="setUpTest" finished-at="2024-10-24T13:00:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatUserIsAbleToNavigateToTheEarnPlatformRewardsProgramSectionAndValidateTheParagraphOfTheSection()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:28 IST" name="verifyThatUserIsAbleToNavigateToTheEarnPlatformRewardsProgramSectionAndValidateTheParagraphOfTheSection" finished-at="2024-10-24T13:00:29 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserIsAbleToNavigateToTheEarnPlatformRewardsProgramSectionAndValidateTheParagraphOfTheSection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:29 IST" name="tearDown" finished-at="2024-10-24T13:00:30 IST" duration-ms="1799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:30 IST" name="setup" finished-at="2024-10-24T13:00:38 IST" duration-ms="7579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:38 IST" name="setUpTest" finished-at="2024-10-24T13:00:38 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatUserIsAbleToNavigateToTheEarnPlatformRewardsProgramSectionAndValidateTheTitleOfTheSection()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:38 IST" name="verifyThatUserIsAbleToNavigateToTheEarnPlatformRewardsProgramSectionAndValidateTheTitleOfTheSection" finished-at="2024-10-24T13:00:38 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserIsAbleToNavigateToTheEarnPlatformRewardsProgramSectionAndValidateTheTitleOfTheSection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:38 IST" name="tearDown" finished-at="2024-10-24T13:00:39 IST" duration-ms="620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:39 IST" name="setup" finished-at="2024-10-24T13:00:48 IST" duration-ms="9572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:48 IST" name="setUpTest" finished-at="2024-10-24T13:00:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatWeeklySummaryReportSectionIsPresentAndUserIsAbleToClickOnReadMoreButtonAndOpenTheSummaryReportOnNewTab()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:00:48 IST" name="verifyThatWeeklySummaryReportSectionIsPresentAndUserIsAbleToClickOnReadMoreButtonAndOpenTheSummaryReportOnNewTab" finished-at="2024-10-24T13:01:41 IST" duration-ms="52877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatWeeklySummaryReportSectionIsPresentAndUserIsAbleToClickOnReadMoreButtonAndOpenTheSummaryReportOnNewTab -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:01:41 IST" name="tearDown" finished-at="2024-10-24T13:01:42 IST" duration-ms="1187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:01:42 IST" name="setup" finished-at="2024-10-24T13:01:58 IST" duration-ms="15999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:01:58 IST" name="setUpTest" finished-at="2024-10-24T13:01:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyTheDayLightModeIsChangingWhenUserClicksOnItFromDayToNightMode()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:01:58 IST" name="verifyTheDayLightModeIsChangingWhenUserClicksOnItFromDayToNightMode" finished-at="2024-10-24T13:01:59 IST" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheDayLightModeIsChangingWhenUserClicksOnItFromDayToNightMode -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:01:59 IST" name="tearDown" finished-at="2024-10-24T13:02:00 IST" duration-ms="899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:00 IST" name="setup" finished-at="2024-10-24T13:02:09 IST" duration-ms="9122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:09 IST" name="setUpTest" finished-at="2024-10-24T13:02:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyTheDayLightModeIsChangingWhenUserClicksOnItFromNightToDayMode()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:09 IST" name="verifyTheDayLightModeIsChangingWhenUserClicksOnItFromNightToDayMode" finished-at="2024-10-24T13:02:11 IST" duration-ms="1502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheDayLightModeIsChangingWhenUserClicksOnItFromNightToDayMode -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:11 IST" name="tearDown" finished-at="2024-10-24T13:02:11 IST" duration-ms="746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:11 IST" name="setup" finished-at="2024-10-24T13:02:23 IST" duration-ms="11401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:23 IST" name="setUpTest" finished-at="2024-10-24T13:02:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThePresenceOfConvertMenuDD()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:23 IST" name="verifyThePresenceOfConvertMenuDD" finished-at="2024-10-24T13:02:23 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThePresenceOfConvertMenuDD -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:23 IST" name="tearDown" finished-at="2024-10-24T13:02:23 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:23 IST" name="setup" finished-at="2024-10-24T13:02:31 IST" duration-ms="7523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyThePresenceOfCryptoParaText()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:31 IST" name="verifyThePresenceOfCryptoParaText" finished-at="2024-10-24T13:02:31 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThePresenceOfCryptoParaText -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:31 IST" name="setUpTest" finished-at="2024-10-24T13:02:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:31 IST" name="tearDown" finished-at="2024-10-24T13:02:32 IST" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:32 IST" name="setup" finished-at="2024-10-24T13:02:40 IST" duration-ms="8493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:40 IST" name="setUpTest" finished-at="2024-10-24T13:02:40 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThePresenceOfGen3_0CryptoExchangeText()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:40 IST" name="verifyThePresenceOfGen3_0CryptoExchangeText" finished-at="2024-10-24T13:02:40 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThePresenceOfGen3_0CryptoExchangeText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:40 IST" name="tearDown" finished-at="2024-10-24T13:02:41 IST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:41 IST" name="setup" finished-at="2024-10-24T13:02:47 IST" duration-ms="6814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:47 IST" name="setUpTest" finished-at="2024-10-24T13:02:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThePresenceOfHeaderMenu()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:47 IST" name="verifyThePresenceOfHeaderMenu" finished-at="2024-10-24T13:02:48 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThePresenceOfHeaderMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:48 IST" name="tearDown" finished-at="2024-10-24T13:02:48 IST" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:48 IST" name="setup" finished-at="2024-10-24T13:02:55 IST" duration-ms="6849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyThePresenceOfResearchMenuDD()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:55 IST" name="verifyThePresenceOfResearchMenuDD" finished-at="2024-10-24T13:02:56 IST" duration-ms="606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThePresenceOfResearchMenuDD -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:55 IST" name="setUpTest" finished-at="2024-10-24T13:02:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:56 IST" name="tearDown" finished-at="2024-10-24T13:02:56 IST" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:02:56 IST" name="setup" finished-at="2024-10-24T13:03:03 IST" duration-ms="6395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:03:03 IST" name="setUpTest" finished-at="2024-10-24T13:03:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThePresenceOfRewardsProgramMenuDD()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:03:03 IST" name="verifyThePresenceOfRewardsProgramMenuDD" finished-at="2024-10-24T13:03:04 IST" duration-ms="1160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThePresenceOfRewardsProgramMenuDD -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:03:04 IST" name="tearDown" finished-at="2024-10-24T13:03:04 IST" duration-ms="647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:03:04 IST" name="setup" finished-at="2024-10-24T13:03:11 IST" duration-ms="6898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyTradeButtonFromTheMarketTablesActionColumnIsClickableAndOpenItInNewTab()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:03:11 IST" name="verifyTradeButtonFromTheMarketTablesActionColumnIsClickableAndOpenItInNewTab" finished-at="2024-10-24T13:04:11 IST" duration-ms="60115" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to an exception.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception.
+at org.testng.Assert.fail(Assert.java:111)
+at com.ixfi.testcases.IndexPageTest.verifyTradeButtonFromTheMarketTablesActionColumnIsClickableAndOpenItInNewTab(IndexPageTest.java:683)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTradeButtonFromTheMarketTablesActionColumnIsClickableAndOpenItInNewTab -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:03:11 IST" name="setUpTest" finished-at="2024-10-24T13:03:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:12 IST" name="tearDown" finished-at="2024-10-24T13:04:14 IST" duration-ms="1485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:14 IST" name="setup" finished-at="2024-10-24T13:04:23 IST" duration-ms="9160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:23 IST" name="setUpTest" finished-at="2024-10-24T13:04:23 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyUserIsAbleToClickOnAirdropsCardAndAbleToNavigateToAirdropsPage()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:23 IST" name="verifyUserIsAbleToClickOnAirdropsCardAndAbleToNavigateToAirdropsPage" finished-at="2024-10-24T13:04:26 IST" duration-ms="2702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToClickOnAirdropsCardAndAbleToNavigateToAirdropsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:26 IST" name="tearDown" finished-at="2024-10-24T13:04:26 IST" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:26 IST" name="setup" finished-at="2024-10-24T13:04:33 IST" duration-ms="7320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserIsAbleToClickOnConvertFeeCardAndAbleToNavigateToConvertPage()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:33 IST" name="verifyUserIsAbleToClickOnConvertFeeCardAndAbleToNavigateToConvertPage" finished-at="2024-10-24T13:04:39 IST" duration-ms="5193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToClickOnConvertFeeCardAndAbleToNavigateToConvertPage -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:33 IST" name="setUpTest" finished-at="2024-10-24T13:04:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:39 IST" name="tearDown" finished-at="2024-10-24T13:04:39 IST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:39 IST" name="setup" finished-at="2024-10-24T13:04:47 IST" duration-ms="8230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserIsAbleToClickOnReferralProgramCardAndAbleToNavigateToReferralProgamPage()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:47 IST" name="verifyUserIsAbleToClickOnReferralProgramCardAndAbleToNavigateToReferralProgamPage" finished-at="2024-10-24T13:04:52 IST" duration-ms="5252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToClickOnReferralProgramCardAndAbleToNavigateToReferralProgamPage -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:47 IST" name="setUpTest" finished-at="2024-10-24T13:04:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:52 IST" name="tearDown" finished-at="2024-10-24T13:04:53 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:04:53 IST" name="setup" finished-at="2024-10-24T13:05:00 IST" duration-ms="6892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:05:00 IST" name="setUpTest" finished-at="2024-10-24T13:05:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyUserIsAbleToClickOnRewardsCenterCardAndAbleToNavigateToRewardsPage()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:05:00 IST" name="verifyUserIsAbleToClickOnRewardsCenterCardAndAbleToNavigateToRewardsPage" finished-at="2024-10-24T13:05:02 IST" duration-ms="2111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToClickOnRewardsCenterCardAndAbleToNavigateToRewardsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.IndexPageTest@5b94b04d]" started-at="2024-10-24T13:05:02 IST" name="tearDown" finished-at="2024-10-24T13:05:02 IST" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ixfi.testcases.IndexPageTest -->
+      <class name="com.ixfi.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:51:53 IST" name="setup" finished-at="2024-10-24T12:52:01 IST" duration-ms="7428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:52:01 IST" name="setUpTest" finished-at="2024-10-24T12:52:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyLoginByEmailFunctionality()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:52:01 IST" name="verifyLoginByEmailFunctionality" finished-at="2024-10-24T12:52:20 IST" duration-ms="18984" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()=' Send OTP ']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()=' Send OTP ']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.ixfi.actiondriver.Action.waitForElementToBeClickable(Action.java:49)
+at com.ixfi.actiondriver.Action.click(Action.java:68)
+at com.ixfi.pageobjects.AuthValidationPage.enterOTP(AuthValidationPage.java:50)
+at com.ixfi.pageobjects.LoginPage.loginUsingEmailID(LoginPage.java:90)
+at com.ixfi.testcases.LoginPageTest.verifyLoginByEmailFunctionality(LoginPageTest.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()=' Send OTP ']"}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f95e939ffd919f993fee7c2f2245fad, findElement {using=xpath, value=//button[text()=' Send OTP ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\RAMCHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60288}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60288/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f95e939ffd919f993fee7c2f2245fad
+at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginByEmailFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:52:20 IST" name="tearDown" finished-at="2024-10-24T12:52:21 IST" duration-ms="506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:52:21 IST" name="setup" finished-at="2024-10-24T12:52:29 IST" duration-ms="8225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:52:29 IST" name="setUpTest" finished-at="2024-10-24T12:52:29 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyLoginByPhoneNumberFunctionality()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:52:29 IST" name="verifyLoginByPhoneNumberFunctionality" finished-at="2024-10-24T12:53:13 IST" duration-ms="43860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginByPhoneNumberFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:53:13 IST" name="tearDown" finished-at="2024-10-24T12:53:13 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:53:13 IST" name="setup" finished-at="2024-10-24T12:53:20 IST" duration-ms="7426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:53:20 IST" name="setUpTest" finished-at="2024-10-24T12:53:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatUserIsNavigatedToLoginPage()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:53:20 IST" name="verifyThatUserIsNavigatedToLoginPage" finished-at="2024-10-24T12:53:24 IST" duration-ms="3286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserIsNavigatedToLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:53:24 IST" name="tearDown" finished-at="2024-10-24T12:53:24 IST" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:53:24 IST" name="setup" finished-at="2024-10-24T12:53:32 IST" duration-ms="7471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:53:32 IST" name="setUpTest" finished-at="2024-10-24T12:53:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyThatUserIsNavigatedToSignUpPageByClickingSingUpNowLink()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:53:32 IST" name="verifyThatUserIsNavigatedToSignUpPageByClickingSingUpNowLink" finished-at="2024-10-24T12:53:37 IST" duration-ms="5287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserIsNavigatedToSignUpPageByClickingSingUpNowLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ixfi.testcases.LoginPageTest@385e9564]" started-at="2024-10-24T12:53:37 IST" name="tearDown" finished-at="2024-10-24T12:53:37 IST" duration-ms="356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ixfi.testcases.LoginPageTest -->
+    </test> <!-- Test_All -->
+  </suite> <!-- Suite -->
+</testng-results>
