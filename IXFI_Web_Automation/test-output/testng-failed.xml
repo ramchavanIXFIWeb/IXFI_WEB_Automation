@@ -6,28 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test_All(failed)">
     <classes>
-      <class name="com.ixfi.testcases.IndexPageTest">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="loadConfiguration"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="setUpTest"/>
-          <include name="verifyLoginButtonIsClickableAndUserIsNavigatedToLoginPage"/>
-        </methods>
-      </class> <!-- com.ixfi.testcases.IndexPageTest -->
-      <class name="com.ixfi.testcases.SignUpPageTest">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="verifyThatUserIsNavigatedToLoginPageAfterClickinOnLoginLinkPresentOnSignUpPageTest"/>
-          <include name="loadConfiguration"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="verifyCreateAccountByPhoneFunctionalityTest"/>
-          <include name="setUpTest"/>
-          <include name="verifyThatUserIsNavigatedToSignUpPageAfterClickingOnRegisterButton"/>
-        </methods>
-      </class> <!-- com.ixfi.testcases.SignUpPageTest -->
       <class name="com.ixfi.testcases.LoginPageTest">
         <methods>
           <include name="afterSuite"/>
