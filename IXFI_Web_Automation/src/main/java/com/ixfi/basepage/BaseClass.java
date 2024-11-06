@@ -125,8 +125,8 @@ public class BaseClass {
 		// Thread.sleep(4000);
 		Action.waitForLoaderToDisappear(driver);
 		// Apply timeouts
-		// Action.implicitWait(driver, 10);
-		Action.pageLoadTimeOut(driver, 10);
+		Action.implicitWait(driver, 15);
+		Action.pageLoadTimeOut(driver, 15);
 		Action.acceptCookies(acceptCokiesButton);
 		// Action.acceptCookies();
 	}

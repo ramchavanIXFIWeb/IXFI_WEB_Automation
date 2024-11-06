@@ -431,9 +431,9 @@ public class IndexPageTest extends BaseClass {
 		Log.info("Clicked on rewads center cards");
 		String actualPageTitle = rewardsProgramPage.getRewardsPageTitle();
 		// System.out.println(actualPageTitle);
-		Log.info("Navigated to rewards program page and captured page title");
+		Log.info("Navigated to rewards program page and captured page title: "+actualPageTitle);
 		String expectedPageTitle = prop.getProperty("rewardsPageTitle");
-		Log.info("retrived the expected titles from properties file");
+		Log.info("retrived the expected titles from properties file: "+expectedPageTitle);
 		Assert.assertEquals(actualPageTitle, expectedPageTitle,
 				"Titles are not matched please check the titles properly");
 		Log.info("verified the page titles, both the titles are matched!");
@@ -447,9 +447,9 @@ public class IndexPageTest extends BaseClass {
 		Log.info("Clicked on Airdrops cards");
 		String actualPageTitle = airdrops.getAirdropsPageTitle();
 		// System.out.println(actualPageTitle);
-		Log.info("Navigated to Airdrops page and captured page title");
+		Log.info("Navigated to Airdrops page and captured page title: "+actualPageTitle);
 		String expectedPageTitle = prop.getProperty("airdropsPageTitle");
-		Log.info("retrived the expected titles from properties file");
+		Log.info("retrived the expected titles from properties file: "+expectedPageTitle);
 		Assert.assertEquals(actualPageTitle, expectedPageTitle,
 				"Titles are not matched please check the titles properly");
 		Log.info("verified the page titles, both the titles are matched!");
@@ -464,9 +464,9 @@ public class IndexPageTest extends BaseClass {
 		Log.info("Clicked on ReferralProgram cards");
 		String actualPageTitle = referral.getReferralProgramPageTitle();
 		// System.out.println(actualPageTitle);
-		Log.info("Navigated to ReferralProgram page and captured page title");
+		Log.info("Navigated to ReferralProgram page and captured page title: "+actualPageTitle);
 		String expectedPageTitle = prop.getProperty("referralProgramPageTitle");
-		Log.info("retrived the expected titles from properties file");
+		Log.info("retrived the expected titles from properties file: "+expectedPageTitle);
 		Assert.assertEquals(actualPageTitle, expectedPageTitle,
 				"Titles are not matched please check the titles properly");
 		Log.info("verified the page titles, both the titles are matched!");
@@ -480,9 +480,9 @@ public class IndexPageTest extends BaseClass {
 		Log.info("Clicked on 0 %conversion fee  cards");
 		String actualPageTitle = convert.getConvertPageTitle();
 		// System.out.println(actualPageTitle);
-		Log.info("Navigated to Convert page and captured page title");
+		Log.info("Navigated to Convert page and captured page title: "+actualPageTitle);
 		String expectedPageTitle = prop.getProperty("convertPageTitle");
-		Log.info("retrived the expected titles from properties file");
+		Log.info("retrived the expected titles from properties file: "+expectedPageTitle);
 		Assert.assertEquals(actualPageTitle, expectedPageTitle,
 				"Titles are not matched please check the titles properly");
 		Log.info("verified the page titles, both the titles are matched!");

@@ -7,7 +7,9 @@
 
 
 	<test thread-count="5" name="Test_All">
+	<parameter name="browser" value="chrome"></parameter>
 		<classes>
+			<class name="com.ixfi.testcases.IndexPageTest"></class>
 			<class name="com.ixfi.testcases.SignUpPageTest" />
 			<class name="com.ixfi.testcases.LoginPageTest">
 				<!--	<methods>
@@ -15,11 +17,11 @@
 
 				</methods> -->
 			</class>
-			<class name="com.ixfi.testcases.IndexPageTest">
-				<!--	<methods>
+
+			<!--	<methods>
 					<exclude name="verifyThePresenceOfHeaderMenu" />
 				</methods>-->
-			</class>
+
 		</classes>
 	</test> <!--
 	Test -->

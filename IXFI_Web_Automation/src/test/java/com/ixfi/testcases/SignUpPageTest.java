@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.ixfi.actiondriver.Action;
 import com.ixfi.basepage.BaseClass;
 import com.ixfi.pageobjects.IndexPage;
 import com.ixfi.pageobjects.LoginPage;
@@ -27,6 +28,10 @@ public class SignUpPageTest extends BaseClass {
 		signUpPage = index.clickOnSignUpButton();
 		// Log.info("clicked On SignUp Button");
 		signUpPage.createAccountByUsingEmail();
+
+		signUpPage.clickOnCreateAccountButton();
+		Log.info("Clicked on Create Account button");
+		Thread.sleep(5000);
 		Log.info("Entered all the details in signup form - SignUp by email");
 		// Assert.assertFalse(signUpPage.clickOnCreateAccountButton());//after clicking
 		// on terms and condition the create account buttons attribute will be changed
@@ -41,6 +46,9 @@ public class SignUpPageTest extends BaseClass {
 		signUpPage = index.clickOnSignUpButton();
 		Log.info("Clicked on signup button");
 		signUpPage.createAccountByUsingPhoneNumber();
+		signUpPage.clickOnCreateAccountButton();
+		Log.info("Clicked on create Account button");
+		Thread.sleep(5000);
 		Log.endTestCase("verifyCreateAccountByPhoneFunctionalityTest");
 	}
 
@@ -49,7 +57,7 @@ public class SignUpPageTest extends BaseClass {
 		Log.startTestCase("verifyCreateAccountButtonRemainsDisabledUntilTermsAndConditionsAcceptanceTest");
 		signUpPage = index.clickOnSignUpButton();
 		Log.info("Clicked on Signup button");
-		Assert.assertTrue(signUpPage.clickOnCreateAccountButton());
+		Assert.assertTrue(signUpPage.verifyCreateAccountButtonisClicked());
 		Log.info("Veried that create account button is clicked");
 		Log.endTestCase("verifyCreateAccountButtonRemainsDisabledUntilTermsAndConditionsAcceptanceTest");
 	}
@@ -86,5 +94,25 @@ public class SignUpPageTest extends BaseClass {
 				"User is not naviagted to loginPage from signUpPage");
 		Log.info("Retreievd both actual and expected url and matched");
 		Log.endTestCase("verifyThatUserIsNavigatedToLoginPageAfterClickinOnLoginLinkPresentOnSignUpPageTest");
+	}
+
+	@Test
+	public void verifyThatEyeButtonIsClickableAndBothPasswordIsCorrect() throws InterruptedException {
+		Log.startTestCase("verifyThatEyeButtonIsClickableAndBothPasswordIsCorrectTest");
+		signUpPage = index.clickOnSignUpButton();
+		Log.info("Clicked on register button");
+		signUpPage.createAccountByUsingEmail();
+		Log.info("Entered all the details");
+		Thread.sleep(5000);
+		signUpPage.clickOnPasswordEyeImage();
+		Log.info("Clicked on password eye image to see the entered password");
+		String pass = signUpPage.getPasswordText();
+		Log.info("Retrieved Password is: " + pass);
+		signUpPage.clickOnConfirmPasswordEyeImage();
+		Log.info("Clicked on confirm password eye image to see the entered confirm password ");
+		String confirmPass = signUpPage.getConfirmPasswordText();
+		Log.info("Retrieved Confrim Password is: " + confirmPass);
+		Assert.assertEquals(pass, confirmPass, "Password and confirmPassword are not matched, please check again");
+		Log.endTestCase("verifyThatEyeButtonIsClickableAndBothPasswordIsCorrectTest");
 	}
 }

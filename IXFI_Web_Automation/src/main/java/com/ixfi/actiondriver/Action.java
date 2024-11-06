@@ -65,7 +65,7 @@ public class Action extends BaseClass {
 	// Method to click an element
 	public static void click(WebElement element) {
 
-		waitForElementToBeClickable(element, 10);
+		waitForElementToBeClickable(element, 15);
 		element.click();
 	}
 
@@ -95,7 +95,7 @@ public class Action extends BaseClass {
 	}
 
 	public static void click(WebDriver driver, WebElement element) {
-		// new Actions(driver).moveToElement(element).click().perform();
+		new Actions(driver).moveToElement(element).click().perform();
 
 	}
 
@@ -353,13 +353,23 @@ public class Action extends BaseClass {
 		}
 	}
 
-	public boolean acceptAlert(WebDriver driver) {
+	public static boolean acceptAlert(WebDriver driver) {
 		try {
 			Alert alert = driver.switchTo().alert();
 			alert.accept();
 			return true;
 		} catch (NoAlertPresentException e) {
 			return false;
+		}
+	}
+
+	public static String getAlertText() {
+		try {
+			Alert alert = driver.switchTo().alert();
+			// alert.accept();
+			return alert.getText();
+		} catch (NoAlertPresentException e) {
+			return e.getMessage();
 		}
 	}
 

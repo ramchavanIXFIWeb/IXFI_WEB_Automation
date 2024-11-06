@@ -49,8 +49,29 @@ public class LoginPage extends BaseClass{
 	@FindBy(xpath="//a[@href='/auth/signup']")
 	WebElement signUpNowLink;
 	
-	@FindBy(xpath="//img[@alt='eye']")
+	@FindBy(xpath="//button/img[@alt='eye']")
 	WebElement eyeIconPasswordField;
+	
+	@FindBy(xpath="//div[@class='app-icon ng-tns-c3471902502-1 ng-star-inserted']/img")
+	WebElement aosAndIosIcon;
+	
+	@FindBy(xpath="//div[@class='ref-qr ng-star-inserted']/h3")
+	WebElement scannerText;
+	
+	@FindBy(xpath="//div[@class='ref-qr ng-star-inserted']/img")
+	WebElement scannerImg;
+	
+	@FindBy(xpath="//div[@class='theme-icon ng-star-inserted']/a/img")
+	WebElement daylightBtn;
+	
+	@FindBy(xpath="//div[@class='logo ng-star-inserted']//img[@alt='IXFI logo']")
+	WebElement ixfiLogo;
+	
+	@FindBy(xpath="//button[@class='btn-twice-outline' and normalize-space(text())='Yes']")
+	WebElement yesBtn;
+	
+	@FindBy(xpath="//button[@class='btn-default btn-secondary w-100' and normalize-space(text())='No']")
+	WebElement noBtn;
 	
 	public LoginPage(WebDriver driver)
 	{ 
@@ -110,7 +131,22 @@ public class LoginPage extends BaseClass{
 		
 	}
 	
-	
+	public String loginUsingInvalidEmailAndPassword(String invEmail,String invPass) throws InterruptedException
+	{
+		Action.click(emailButton);
+		Action.enterText(emailTextField, invEmail);
+		Action.enterText(loginPasswordField, invPass);
+		Action.click(loginButton);
+		//
+		Action.implicitWait(driver, 5);//this will wait completed script for 5 second until user manually handles the captcha
+		System.out.println("Validated captcha slider manually!!!");
+		Thread.sleep(7000);
+		//an Alert will open which provides the text 
+		//Action.acceptAlert(driver);
+		return Action.getAlertText();
+		
+		
+	}
 	public void clickOnemailButton()
 	{
 		Action.click(emailButton);
@@ -145,7 +181,7 @@ public class LoginPage extends BaseClass{
 	
 	public void clickOnLoginButton()
 	{
-		Action.click(driver, loginButton);
+		Action.click(loginButton);
 		
 		//After clicking on it, it will navigate to slider popup and then authenticationPage, then new homePage
 		
@@ -160,9 +196,62 @@ public class LoginPage extends BaseClass{
 		
 	}
 	
-	public void clickOnEyeIconPasswordField()
+	public ForgotPasswordPage clickOnForgotPasswordLink()
 	{
-		Action.click(driver, eyeIconPasswordField);
+		Action.click(forgotPasswordLink);
+		return new ForgotPasswordPage(driver);
 	}
 	
+	public void clickOnEyeIconPasswordField()
+	{
+		Action.click(eyeIconPasswordField);
+	}
+	public String getPropertyofEyeButton()
+	{
+		return eyeIconPasswordField.getAttribute("src");
+	}
+	
+	public void clickOnAosAndIosAppIcon()
+	{	
+		Action.waitForElementToBeClickable(aosAndIosIcon, 10);
+		Action.clickUsingJavaScript(driver,aosAndIosIcon);
+	}
+	
+	public String getAppDownloadScannerText()
+	{
+		Action.waitForElementToBeVisible(scannerText, 10);
+		return Action.standardizeText(Action.getText(scannerText));
+	}
+	
+	public boolean verifyAppDownloadQRCodeImgIsDisplayed()
+	{
+		return Action.isDisplayed(driver, scannerImg);
+	}
+	
+	public String validateDayLightMode() {
+		String actualAlt = daylightBtn.getAttribute("src");
+		return actualAlt;
+	}
+
+	public void clickOnDayLightButton() {
+		Action.click(daylightBtn);
+	}
+	
+	public void clickOnIxfiLogo()
+	{
+		Action.waitForElementToBeVisible(ixfiLogo, 10);
+		Action.click(ixfiLogo);
+		
+	}
+	public IndexPage clickOnYesButton()
+	{
+		Action.click(yesBtn);
+		return new IndexPage(driver);
+		
+	}
+	
+	public void clickOnNoButton()
+	{
+		Action.click(noBtn);
+	}
 }

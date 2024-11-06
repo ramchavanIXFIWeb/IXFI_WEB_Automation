@@ -58,6 +58,13 @@ public class SignUpPage extends BaseClass {
 	@FindBy(xpath = "//a[@href='/auth/login']")
 	WebElement loginLink;
 
+	@FindBy(xpath="//div[@class='email-phone-tabs']//div[2]//div[1]//button[1]//img[1]")
+	WebElement passwordEye;
+	
+	@FindBy(xpath="//div[3]//div[1]//button[1]//img[1]")
+	WebElement confirmPasswordEye;
+	
+	
 	// Constructor
 	public SignUpPage(WebDriver driver) {
 		BaseClass.driver = driver;
@@ -94,9 +101,9 @@ public class SignUpPage extends BaseClass {
 		Log.info("Clicked on pramotional email checkbox");
 		Action.clickCheckbox(termsAndConditionsCheckbox);
 		Log.info("Clicked on Terms and Conditions checkbox ");
-		Action.click(createAccountButton);
-		Log.info("Clicked on Create Account button");
-		Thread.sleep(5000);
+//		Action.click(createAccountButton);
+//		Log.info("Clicked on Create Account button");
+//		Thread.sleep(5000);
 		// this will return AuthValidationPage Object --
 
 		// After click on create account button, the captcha slider will open and user
@@ -127,12 +134,14 @@ public class SignUpPage extends BaseClass {
 		Log.info("Clicked on Promotional Email checkbox");
 		Action.clickCheckbox(termsAndConditionsCheckbox);
 		Log.info("Clicked on Terms and Conditions checkbox");
-		Action.click(createAccountButton);
-		Log.info("Clicked on create Account button");
-		Thread.sleep(5000);
+		
 	}
 
-	public boolean clickOnCreateAccountButton() {
+	public void clickOnCreateAccountButton() {
+		 Action.click(createAccountButton);
+	}
+	
+	public boolean verifyCreateAccountButtonisClicked() {
 		return Action.verifyButtonClicked(createAccountButton);
 	}
 
@@ -150,4 +159,35 @@ public class SignUpPage extends BaseClass {
 		return new LoginPage(driver);
 	}
 
+	public void clickOnPasswordEyeImage()
+	{
+		Action.click(passwordEye);
+	}
+	
+	public void clickOnConfirmPasswordEyeImage()
+	{
+		Action.click(confirmPasswordEye);
+	}
+	
+	public void clickOnPramotionalEmailCheckbox()
+	{
+		Action.click(promotionalEmailCheckbox);
+	}
+	
+	public void clickOnTermsAndConditionCheckbox()
+	{
+		Action.click(termsAndConditionsCheckbox);
+	}
+	
+	public String getPasswordText()
+	{
+		Action.waitForElementToBeVisible(passwordField, 10);
+		return passwordField.getAttribute("value");
+	}
+	
+	public String getConfirmPasswordText()
+	{
+		Action.waitForElementToBeVisible(confirmPasswordField, 10);
+		return confirmPasswordField.getAttribute("value");
+	}
 }
