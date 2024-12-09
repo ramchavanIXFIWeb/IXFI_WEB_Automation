@@ -15,6 +15,7 @@ public class LoginPage extends BaseClass{
 	IndexPage index;
 	AuthValidationPage auth;
 	KYCPopUpPage kyc;
+	
 	//WebElements
 	
 	@FindBy(xpath="//span[contains(text(), 'https://www.ixfi.com/auth/login')]")
@@ -52,7 +53,7 @@ public class LoginPage extends BaseClass{
 	@FindBy(xpath="//button/img[@alt='eye']")
 	WebElement eyeIconPasswordField;
 	
-	@FindBy(xpath="//div[@class='app-icon ng-tns-c3471902502-1 ng-star-inserted']/img")
+	@FindBy(xpath="//img[@src='https://cdn.ixfi.com/shared/apple.webp']")
 	WebElement aosAndIosIcon;
 	
 	@FindBy(xpath="//div[@class='ref-qr ng-star-inserted']/h3")
@@ -61,7 +62,7 @@ public class LoginPage extends BaseClass{
 	@FindBy(xpath="//div[@class='ref-qr ng-star-inserted']/img")
 	WebElement scannerImg;
 	
-	@FindBy(xpath="//div[@class='theme-icon ng-star-inserted']/a/img")
+	@FindBy(xpath="//img[@class='ng-star-inserted']")
 	WebElement daylightBtn;
 	
 	@FindBy(xpath="//div[@class='logo ng-star-inserted']//img[@alt='IXFI logo']")
@@ -149,6 +150,7 @@ public class LoginPage extends BaseClass{
 	}
 	public void clickOnemailButton()
 	{
+		Action.waitForElementToBeVisible(emailButton, 20);
 		Action.click(emailButton);
 	}
 
@@ -165,6 +167,7 @@ public class LoginPage extends BaseClass{
 	
 	public void clickOnPhoneButton()
 	{
+		Action.waitForElementToBeVisible(phoneButton, 20);
 		Action.click(phoneButton);
 	}
 	
@@ -198,6 +201,7 @@ public class LoginPage extends BaseClass{
 	
 	public ForgotPasswordPage clickOnForgotPasswordLink()
 	{
+		Action.waitForElementToBeVisible(forgotPasswordLink, 20);
 		Action.click(forgotPasswordLink);
 		return new ForgotPasswordPage(driver);
 	}

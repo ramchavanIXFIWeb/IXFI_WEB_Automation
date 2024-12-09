@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 import java.util.function.Function;
 import java.util.NoSuchElementException;
 import org.apache.commons.io.FileUtils;
@@ -34,8 +35,15 @@ import com.ixfi.basepage.BaseClass;
 
 public class Action extends BaseClass {
 
-	public void scrollToElement(WebDriver driver, WebElement element) {
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
+	// this method is used when we want to scroll the elements from particular
+	// sections only
+	public static void scrollToElement(WebDriver driver, List<WebElement> elements) throws InterruptedException {
+
+		Actions actions = new Actions(driver);
+		actions.moveToElement(elements.get(elements.size() - 1)).perform();
+		actions.sendKeys(org.openqa.selenium.Keys.PAGE_DOWN).perform();
+		Thread.sleep(500); // Wait for the next batch to load
+
 	}
 
 	// Method to wait for an element to be visible
@@ -68,6 +76,8 @@ public class Action extends BaseClass {
 		waitForElementToBeClickable(element, 15);
 		element.click();
 	}
+
+	
 
 	public static void clickCheckbox(WebElement checkbox) {
 		if (!checkbox.isSelected()) {
@@ -132,7 +142,7 @@ public class Action extends BaseClass {
 		return false;
 	}
 
-	public boolean selectByIndex(WebElement element, int index) {
+	public static boolean selectByIndex(WebElement element, int index) {
 		try {
 			new Select(element).selectByIndex(index);
 			return true;
@@ -141,7 +151,7 @@ public class Action extends BaseClass {
 		}
 	}
 
-	public boolean selectByValue(WebElement element, String value) {
+	public static boolean selectByValue(WebElement element, String value) {
 		try {
 			new Select(element).selectByValue(value);
 			return true;
@@ -394,7 +404,7 @@ public class Action extends BaseClass {
 		return driver.getCurrentUrl();
 	}
 
-	public boolean clickElement(WebElement element) {
+	public static boolean clickElement(WebElement element) {
 		try {
 			element.click();
 			return true;
@@ -403,6 +413,26 @@ public class Action extends BaseClass {
 		}
 	}
 
+	public static WebElement miniDriver(WebDriver driver, By ele) {
+		WebElement miniDriver = driver.findElement(ele);
+		return miniDriver;
+	}
+
+	// this action method is just to scroll into the particular section and not the
+	// whole webpage
+	public static void scrollByVisibilityOfElementUsingMiniDriver(WebElement miniDriver, By ele) {
+		try {
+			// Scroll the element into view
+			((JavascriptExecutor) miniDriver).executeScript("arguments[0].scrollIntoView(true);", ele);
+
+			// Wait for the element to be clickable and then click
+			// element.click();
+		} catch (Exception e) {
+			System.out.println("Failed to scroll on element due to: " + e.getMessage());
+		}
+	}
+
+	// this method is to scroll the entire webpage
 	public static void scrollByVisibilityOfElement(WebElement ele) {
 		// TODO Auto-generated method stub
 		try {
@@ -438,28 +468,38 @@ public class Action extends BaseClass {
 	}
 
 	public static void openInNewTab(WebElement element) throws InterruptedException {
+		
+		Actions actions = new Actions(driver);
 		// Perform Ctrl + Click (or Cmd + Click on Mac) to open in a new tab
-		element.sendKeys(Keys.chord(Keys.CONTROL, Keys.RETURN));
-		// Thread.sleep(3000);
-		// If using MacOS, use:
-		// element.sendKeys(Keys.chord(Keys.COMMAND, Keys.RETURN));
+		//element.sendKeys(Keys.chord(Keys.CONTROL, Keys.RETURN));//uncomment this line if the below code is not worked
+		 actions.keyDown(Keys.CONTROL).click(element).keyUp(Keys.CONTROL).build().perform();
 
 		// Optionally, switch to the new tab if needed
 		// switchToNewTab();
 	}
 
-	public boolean type(WebElement ele, String text) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public boolean findElement(WebDriver ldriver, WebElement ele) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
 	public static List<WebElement> findElements(WebDriver driver, By locator) {
 		return driver.findElements(locator);
+	}
+	
+	public static WebElement findElement(WebDriver driver, By locator) {
+        try {
+            // Try to find and return the element immediately
+            WebElement element = driver.findElement(locator);
+            return element;
+        } catch (NoSuchElementException e) {
+            System.out.println("No such element found: " + locator);
+            return null;  // Return null if the element is not found
+        } catch (Exception e) {
+            System.out.println("An error occurred while finding the element: " + locator);
+            e.printStackTrace();
+            return null;  // Return null for any other exception
+        }
+    }
+	
+
+	public static List<WebElement> findElementsUsingWebElement(WebElement ele, By locator) {
+		return ele.findElements(locator);
 	}
 
 	public static void printElementsText(WebDriver driver, By locator) {
@@ -475,11 +515,6 @@ public class Action extends BaseClass {
 	}
 
 	public boolean isEnabled(WebDriver ldriver, WebElement ele) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public boolean selectByVisibleText(String visibletext, WebElement ele) {
 		// TODO Auto-generated method stub
 		return false;
 	}

@@ -16,8 +16,21 @@
 					<exclude name="verifyLoginByEmailFunctionality" />
 
 				</methods> -->
+				
 			</class>
-
+			<class name="com.ixfi.testcases.ForgotPasswordPageTest"></class>
+			<class name="com.ixfi.testcases.FooterPageTest"></class>
+			<class name="com.ixfi.testcases.StatusPageTest"></class>
+		<!--	<class name="com.ixfi.testcases.BuyCryptoPageTest">
+				<methods>
+					<exclude name="verifyTheListOfAvailableCountriesAndRetrieveTheFullName"></exclude>
+					<exclude name="verifyTheListOfAvailableCountriesAndRetrieveTheShortName"></exclude>
+					<exclude name="verifyThatUserIsAbleToFetchTheAvailableOffers"></exclude>
+				</methods>
+			
+			
+			</class>   -->
+			
 			<!--	<methods>
 					<exclude name="verifyThePresenceOfHeaderMenu" />
 				</methods>-->

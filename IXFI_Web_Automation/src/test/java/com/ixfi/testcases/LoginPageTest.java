@@ -174,6 +174,7 @@ public class LoginPageTest extends BaseClass {
 		Assert.assertTrue(actualAlt.contains("sun.webp"),"Does not changed to light mode, please check again");
 		login.clickOnDayLightButton();
 		Log.info("Clicked on DayLight Button");
+		Thread.sleep(4000);
 		String modeAfterClicking=login.validateDayLightMode();
 		Log.info("Retrieved the mode after clicking on daylight mode button: "+modeAfterClicking);
 		Assert.assertTrue(modeAfterClicking.contains("dark-icon.svg"),"Does not changed to Dark mode, please check again");

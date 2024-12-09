@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ixfi.testcases.SignUpPageTest">
+      <class name="com.ixfi.testcases.StatusPageTest">
         <methods>
           <include name="afterSuite"/>
+          <include name="validateTradeInfoSectionTableData_CurrentStateByServices"/>
           <include name="loadConfiguration"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifyThatEyeButtonIsClickableAndBothPasswordIsCorrect"/>
           <include name="setUpTest"/>
         </methods>
-      </class> <!-- com.ixfi.testcases.SignUpPageTest -->
+      </class> <!-- com.ixfi.testcases.StatusPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

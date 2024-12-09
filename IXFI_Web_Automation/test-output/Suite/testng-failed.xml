@@ -5,6 +5,7 @@
     <listener class-name="com.ixfi.utility.ListenerClass"/>
   </listeners>
   <test thread-count="5" name="Test_All(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.ixfi.testcases.LoginPageTest">
         <methods>
@@ -14,29 +15,28 @@
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="verifyLoginByEmailFunctionality"/>
-          <include name="verifyThatUserIsAbleToClickOnDownloadButtonPresentOnTop"/>
         </methods>
       </class> <!-- com.ixfi.testcases.LoginPageTest -->
       <class name="com.ixfi.testcases.IndexPageTest">
         <methods>
           <include name="afterSuite"/>
           <include name="loadConfiguration"/>
-          <include name="validateMarketTrendLosersTableDataTest"/>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="setUpTest"/>
+          <include name="verifyTradeButtonFromTheMarketTablesActionColumnIsClickableAndOpenItInNewTab"/>
         </methods>
       </class> <!-- com.ixfi.testcases.IndexPageTest -->
-      <class name="com.ixfi.testcases.SignUpPageTest">
+      <class name="com.ixfi.testcases.ForgotPasswordPageTest">
         <methods>
           <include name="afterSuite"/>
+          <include name="verifyPasswordResetLinkIsSentOnTheRegisteredEmailID"/>
           <include name="loadConfiguration"/>
           <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="verifyThatEyeButtonIsClickableAndBothPasswordIsCorrect"/>
           <include name="setUpTest"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.ixfi.testcases.SignUpPageTest -->
+      </class> <!-- com.ixfi.testcases.ForgotPasswordPageTest -->
     </classes>
   </test> <!-- Test_All(failed) -->
 </suite> <!-- Failed suite [Suite] -->

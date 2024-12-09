@@ -25,6 +25,7 @@ public class SignUpPageTest extends BaseClass {
 	@Test
 	public void verifyCreateAccountByEmailFunctionalityTest() throws InterruptedException {
 		Log.startTestCase("verifyCreateAccountByEmailFunctionalityTest");
+		Thread.sleep(2000);
 		signUpPage = index.clickOnSignUpButton();
 		// Log.info("clicked On SignUp Button");
 		signUpPage.createAccountByUsingEmail();
@@ -103,16 +104,171 @@ public class SignUpPageTest extends BaseClass {
 		Log.info("Clicked on register button");
 		signUpPage.createAccountByUsingEmail();
 		Log.info("Entered all the details");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
+		String actual_src = signUpPage.getAttributeSRCForPasswordField();
+		String expected_src = "https://cdn.ixfi.com/shared/eye-off.svg";
+		Log.info("Before clicking on eye icon on password field: the attribute src is:" + actual_src);
+		Assert.assertEquals(actual_src, expected_src);
 		signUpPage.clickOnPasswordEyeImage();
 		Log.info("Clicked on password eye image to see the entered password");
+		String actual_src_afterClick = signUpPage.getAttributeSRCForPasswordField();
+		String expected_src_afterClick = "https://cdn.ixfi.com/shared/eye.svg";
+		Log.info("After clicking on eye icon on password field: the attribute src is:" + actual_src_afterClick);
+		Assert.assertEquals(actual_src_afterClick, expected_src_afterClick);
+
 		String pass = signUpPage.getPasswordText();
 		Log.info("Retrieved Password is: " + pass);
+
+		String actualConfirmSrc = signUpPage.getConfirmPasswordSRCAttribute();
+		Log.info("Before clicking on confirm password eye button: src: " + actualConfirmSrc);
+		Assert.assertTrue(actualConfirmSrc.contains("eye-off.svg"),
+				"Not able to get the src for confirm password eye field");
 		signUpPage.clickOnConfirmPasswordEyeImage();
 		Log.info("Clicked on confirm password eye image to see the entered confirm password ");
+
+		String actualConfirmSrcAfterClick = signUpPage.getConfirmPasswordSRCAttribute();
+		Log.info("After clicking on confirm password eye button: src: " + actualConfirmSrcAfterClick);
+		Assert.assertTrue(actualConfirmSrcAfterClick.contains("eye.svg"),
+				"Not able to get the src for confirm password eye field");
+
 		String confirmPass = signUpPage.getConfirmPasswordText();
 		Log.info("Retrieved Confrim Password is: " + confirmPass);
 		Assert.assertEquals(pass, confirmPass, "Password and confirmPassword are not matched, please check again");
 		Log.endTestCase("verifyThatEyeButtonIsClickableAndBothPasswordIsCorrectTest");
 	}
+
+	@Test
+	public void verifyThatWhenUserEntersWrongInputsWhileSignUpWithEmailItShowsProperValidationMessage() {
+		Log.startTestCase("verifyThatWhenUserEntersWrongInputsWhileSignUpWithEmailItShowsProperValidationMessageTest");
+		signUpPage = index.clickOnSignUpButton();
+		Log.info("Clicked on Register button");
+		signUpPage.clickOnEmailSectionButton();
+		Log.info("Clicked on email tab");
+		signUpPage.enterEmailId();
+		Log.info("Entered email id");
+		Log.info("Verifying Whether entered email is as per validation rule or not");
+		Assert.assertEquals(signUpPage.getEmailValidationMsg(), prop.getProperty("emailValMsg"),
+				"Entered email is as per validation rule.");
+		Log.info("Verified Email ID validation rule");
+		signUpPage.enterPassword();
+		Log.info("Entered password");
+		Log.info("Verifying Whether entered password is as per validation rule or not");
+		Assert.assertEquals(signUpPage.getPasswordValidationMsg(), prop.getProperty("passwordValMsg"),
+				"Entered Password is as per validation rule.");
+		Log.info("Verified password validation rule");
+		signUpPage.enterConfirmPassword();
+		Log.info("Entered Confirm password");
+		Log.info("Verifying Whether entered confirm password is correct or not");
+		Assert.assertEquals(signUpPage.getConfirmPassValidationMsg(), prop.getProperty("confirmPassValMsg"),
+				"Entered confirm password is matched and it is as per validation rule.");
+		Log.info("Verified Confirm password validation rule");
+		signUpPage.enterUsername();
+		Log.info("Entered username");
+		Log.info("Verifying Whether entered username is as per validation rule or not");
+		Assert.assertEquals(signUpPage.getUsernameValidationMsg(), prop.getProperty("usernameValMsg"),
+				"Enter username is correct and it is as per validation rule.");
+		Log.info("Verified username validation rule");
+		Log.endTestCase("verifyThatWhenUserEntersWrongInputsWhileSignUpWithEmailItShowsProperValidationMessageTest");
+	}
+
+	@Test
+	public void verifyThatWhenUserEntersWrongInputsWhileSignUpWithPhoneNumberItShowsProperValidationMessage() {
+		Log.startTestCase(
+				"verifyThatWhenUserEntersWrongInputsWhileSignUpWithPhoneNumberItShowsProperValidationMessageTest");
+		signUpPage = index.clickOnSignUpButton();
+		Log.info("Clicked on Register button");
+		signUpPage.clickOnPhoneSectionButton();
+		Log.info("Clicked on Phone tab");
+
+		signUpPage.enterPhoneNumber();
+		Log.info("Entered Phone Number");
+
+		signUpPage.enterPassword();
+		Log.info("Entered password");
+
+		signUpPage.enterConfirmPassword();
+		Log.info("Entered Confirm password");
+
+		signUpPage.enterUsername();
+		Log.info("Entered username");
+
+		Log.info("Verifying Whether entered phone Number is as per validation rule or not");
+		Assert.assertEquals(signUpPage.getPhoneValidationMsg(), prop.getProperty("phoneValMsg"),
+				"Entered Phone number is as per validation rule.");
+		Log.info("Verified Phone Number validation rule");
+		Log.info("Verifying Whether entered password is as per validation rule or not");
+		Assert.assertEquals(signUpPage.getPasswordValidationMsg(), prop.getProperty("passwordValMsg"),
+				"Entered Password is as per validation rule.");
+		Log.info("Verified password validation rule");
+		Log.info("Verifying Whether entered confirm password is correct or not");
+		Assert.assertEquals(signUpPage.getConfirmPassValidationMsg(), prop.getProperty("confirmPassValMsg"),
+				"Entered confirm password is matched and it is as per validation rule.");
+		Log.info("Verified Confirm password validation rule");
+		Log.info("Verifying Whether entered username is as per validation rule or not");
+		Assert.assertEquals(signUpPage.getUsernameValidationMsg(), prop.getProperty("usernameValMsg"),
+				"Enter username is correct and it is as per validation rule.");
+		Log.info("Verified username validation rule");
+		Log.endTestCase(
+				"verifyThatWhenUserEntersWrongInputsWhileSignUpWithPhoneNumberItShowsProperValidationMessageTest");
+	}
+
+	@Test
+	public void verifyUserIsNavigatedBackToTheHomePageByClickingOnIxfiLogo() throws InterruptedException {
+		Log.startTestCase("verifyUserIsNavigatedBackToTheHomePageByClickingOnIxfiLogoTest");
+		signUpPage = index.clickOnSignUpButton();
+		Log.info("Clicked on Register button");
+		loginPage = new LoginPage(driver); // used login page method bcz IXFI logo xpath is same on both signup page and
+											// login page. to avoid duplicate code. I used all methods from login page
+		loginPage.clickOnIxfiLogo();
+		Log.info("Clicked on IXFI Logo");
+		Thread.sleep(4000);
+		index = loginPage.clickOnYesButton();
+		Log.info("Clicked on Yes Button");
+		String title = index.getIXFITitle();
+		Log.info("Retrieved the title of homepage: " + title);
+		Assert.assertEquals(title, prop.getProperty("title"), "Titles are not matched, please check again");
+		Log.endTestCase("verifyUserIsNavigatedBackToTheHomePageByClickingOnIxfiLogoTest");
+	}
+
+	@Test
+	public void verifyUserIsNotNavigatedBackToTheHomePageByClickingOnIxfiLogoAndNoOnPopup()
+			throws InterruptedException {
+		Log.startTestCase("verifyUserIsNotNavigatedBackToTheHomePageByClickingOnIxfiLogoAndNoOnPopupTest");
+		signUpPage = index.clickOnSignUpButton();
+		Log.info("Clicked on Register button");
+		loginPage = new LoginPage(driver); // used login page method bcz IXFI logo xpath is same on both signup page and
+											// login page. to avoid duplicate code. I used all methods from login page
+		loginPage.clickOnIxfiLogo();
+		Log.info("Clicked on IXFI Logo");
+		Thread.sleep(4000);
+		loginPage.clickOnNoButton();
+		Log.info("Clicked on No Button");
+		// Thread.sleep(4000);
+		String title = signUpPage.getSignUpPageTitle();
+		Log.info("Retrieved the title of SignUpPage: " + title);
+		Assert.assertEquals(title, prop.getProperty("signUpPageTitle"), "Titles are not matched, please check again");
+		Log.endTestCase("verifyUserIsNotNavigatedBackToTheHomePageByClickingOnIxfiLogoAndNoOnPopupTest");
+	}
+
+	@Test
+	public void verifyThatTheDayLightButtonIsClickableAndAbleToChangeTheDarkAndLightMode() throws InterruptedException {
+
+		Log.startTestCase("verifyThatTheDayLightButtonIsClickableAndAbleToChangeTheDarkAndLightModeTest");
+		signUpPage = index.clickOnSignUpButton();
+		Log.info("Clicked on Register button");
+		Thread.sleep(4000);
+		String actualSrc = signUpPage.validateDayLightMode();
+		Log.info("Retrieved the dayLigh mode before clicking on it:  " + actualSrc);
+		Assert.assertTrue(actualSrc.contains("sun.webp"), "Does not changed to light mode, please check again");
+		signUpPage.clickOnDayLightButton();
+		Log.info("Clicked on DayLight Button");
+		Thread.sleep(4000);
+		String modeAfterClicking = signUpPage.validateDayLightMode();
+		Log.info("Retrieved the mode after clicking on daylight mode button: " + modeAfterClicking);
+		Assert.assertTrue(modeAfterClicking.contains("dark-icon.svg"),
+				"Does not changed to Dark mode, please check again");
+		Log.endTestCase("verifyThatTheDayLightButtonIsClickableAndAbleToChangeTheDarkAndLightModeTest");
+
+	}
+
 }

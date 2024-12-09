@@ -26,21 +26,26 @@ import com.ixfi.actiondriver.*;
 //this page will act as NewHomePage -- as it is the landing page of IXFI, from here we can navigate to different sections
 
 public class IndexPage extends BaseClass {
+	
+	//WebElements
+	
+	@FindBy(xpath="//a[normalize-space()='Buy Crypto']")
+	WebElement buyCryptoMenu;
 
-	@FindBy(xpath = "//button[@class='btn d-none d-xl-block ng-tns-c3471902502-0' and normalize-space()='Login']")
+	@FindBy(xpath = "//button[@class='btn d-none d-xl-block ng-tns-c3965838326-0' and normalize-space()='Login']")
 	WebElement loginBtn;
 
-	@FindBy(xpath = "//header/div[3]/div[1]/button[text()=' Register ']")
+	@FindBy(xpath = "//header/div[3]/div[1]/button[normalize-space(text())='Register']")
 	WebElement SignUpBtn;
 
 	@FindBy(xpath = "//img[@alt='Logo' and @src='https://cdn.ixfi.com/new-header/logo.svg']")
 	WebElement IxfiLogo; // can be act as link to when clicked on it, check whether it is clickable or
 							// not
 
-	@FindBy(xpath = "//img[@rel='preload' and @class='themeIcon ng-tns-c3471902502-0 ng-star-inserted' ]")
+	@FindBy(xpath = "//img[@rel='preload' and @class='themeIcon ng-tns-c3965838326-0 ng-star-inserted' ]")
 	WebElement dayLightModeBtn;
 
-	@FindBy(xpath = "//div[@class='hamburger-login ng-tns-c3471902502-0']//div[1]//span[1]")
+	@FindBy(xpath = "//div[@class='hamburger-login ng-tns-c3965838326-0']")
 	WebElement humbergerMenuBtn;
 
 	@FindBy(xpath = "//b[normalize-space()='Download']")
@@ -58,15 +63,15 @@ public class IndexPage extends BaseClass {
 	@FindBy(xpath = "//span[normalize-space()='Română']")
 	WebElement romanaTxt;
 
-	@FindBy(xpath = "//div[@class='mobile-sideBar2 ng-tns-c3471902502-0 show']/ul/li")
+	@FindBy(xpath = "//div[@class='mobile-sideBar2 ng-tns-c3965838326-0 show']//ul/li")
 	WebElement languageDD; // Language Dropdown values -- English and romania
 
-	By languageDDLocator = By.xpath("//div[@class='mobile-sideBar2 ng-tns-c3471902502-0 show']/ul/li");
+	By languageDDLocator = By.xpath("//div[@class='mobile-sideBar2 ng-tns-c3965838326-0 show']//ul/li");
 
 	@FindBy(xpath = "//b[normalize-space()='Currency']")
 	WebElement currencyBtn;
 
-	By currencyLocator = By.xpath("//div[@class='mobile-sideBar2 ng-tns-c3471902502-0 show']/ul/li");
+	By currencyLocator = By.xpath("//div[@class='mobile-sideBar2 ng-tns-c3965838326-0 show']/ul/li");
 
 	@FindBy(xpath = "//h1[@class='ltr']")
 	WebElement gen3_0_cryptoExchangeText;
@@ -195,7 +200,7 @@ public class IndexPage extends BaseClass {
 
 	@FindBy(xpath = "//ul[@class='ng-tns-c3437203097-0']//a")
 	WebElement headerMenuList;
-	By headerMenu = By.xpath("//ul[@class='ng-tns-c3471902502-0']//a");
+	By headerMenu = By.xpath("//ul[@class='ng-tns-c3965838326-0']//li//a");
 	By childLocator = (By) headerMenuList;
 
 	@FindBy(xpath = "//a[@class='ng-tns-c3437203097-0 dropbtn ng-star-inserted'][normalize-space()='Trade']")
@@ -217,6 +222,13 @@ public class IndexPage extends BaseClass {
 
 	By researchMenuList = By
 			.xpath("//li[a[text()=' Research ']]//ul[contains(@class, 'dropdown-content')]/li/a/div[1]/div[2]");
+	
+	
+	//--------------------FooterSection
+	@FindBy(xpath="//footer[@class='w-100 pt-4 flex-shrink-0']")
+	WebElement footerSection;
+	
+	
 
 	public IndexPage(WebDriver driver) {
 		BaseClass.driver = driver;
@@ -238,6 +250,12 @@ public class IndexPage extends BaseClass {
 			}
 		}
 		throw new StaleElementReferenceException("Unable to click on login button after multiple attempts");
+	}
+	
+	public BuyCryptoPage clickOnBuyCryptoMenu()
+	{
+		Action.click(buyCryptoMenu);
+		return new BuyCryptoPage(driver);
 	}
 
 	public List<WebElement> getHeaderMenuList() {
@@ -626,6 +644,12 @@ public class IndexPage extends BaseClass {
 
 		return Action.getAllOpenTabs();
 
+	}
+	
+	public FooterPage navigateToFooterSection()
+	{
+		Action.scrollByVisibilityOfElement(footerSection);
+		return new FooterPage(driver);
 	}
 
 }

@@ -1,5 +1,6 @@
 package com.ixfi.pageobjects;
 
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -58,13 +59,32 @@ public class SignUpPage extends BaseClass {
 	@FindBy(xpath = "//a[@href='/auth/login']")
 	WebElement loginLink;
 
-	@FindBy(xpath="//div[@class='email-phone-tabs']//div[2]//div[1]//button[1]//img[1]")
+	@FindBy(xpath = "//div[@class='email-phone-tabs ng-star-inserted']//div[2]//div[1]//button[1]//img[1]")
 	WebElement passwordEye;
-	
-	@FindBy(xpath="//div[3]//div[1]//button[1]//img[1]")
+
+	@FindBy(xpath = "//div[3]//div[1]//button[1]//img[1]")
 	WebElement confirmPasswordEye;
-	
-	
+
+	// validation messages xpaths
+
+	@FindBy(xpath = "//span[normalize-space()='Email is not valid']")
+	WebElement emailValidationMsg;
+
+	@FindBy(xpath = "//span[normalize-space()='Use a valid phone number']")
+	WebElement phoneValidationMsg;
+
+	@FindBy(xpath = "//span[contains(text(),'Password: 8-50 characters, 1 number, 1 special, both upper & lower case')]")
+	WebElement passwordValidationMsg;
+
+	@FindBy(xpath = "//span[normalize-space()='Password and confirm password should be identical']")
+	WebElement confirmPassValidationMsg;
+
+	@FindBy(xpath = "//span[normalize-space()='Username must have 4-15 alphanumeric characters']")
+	WebElement usernameValidationMsg;
+
+	@FindBy(xpath = "//img[@class='ng-star-inserted']")
+	WebElement dayLightBtn;
+
 	// Constructor
 	public SignUpPage(WebDriver driver) {
 		BaseClass.driver = driver;
@@ -134,13 +154,13 @@ public class SignUpPage extends BaseClass {
 		Log.info("Clicked on Promotional Email checkbox");
 		Action.clickCheckbox(termsAndConditionsCheckbox);
 		Log.info("Clicked on Terms and Conditions checkbox");
-		
+
 	}
 
 	public void clickOnCreateAccountButton() {
-		 Action.click(createAccountButton);
+		Action.click(createAccountButton);
 	}
-	
+
 	public boolean verifyCreateAccountButtonisClicked() {
 		return Action.verifyButtonClicked(createAccountButton);
 	}
@@ -159,35 +179,100 @@ public class SignUpPage extends BaseClass {
 		return new LoginPage(driver);
 	}
 
-	public void clickOnPasswordEyeImage()
-	{
-		Action.click(passwordEye);
+	public void clickOnEmailSectionButton() {
+		Action.click(emailSectionButton);
+	}
+
+	public void clickOnPhoneSectionButton() {
+		Action.click(phoneSectionButton);
+	}
+
+	public void clickOnPasswordEyeImage() {
+		Action.clickUsingJavaScript(driver, passwordEye);
 	}
 	
-	public void clickOnConfirmPasswordEyeImage()
+	public String getAttributeSRCForPasswordField()
 	{
-		Action.click(confirmPasswordEye);
+		String src=passwordEye.getAttribute("src");
+		return src;
+	}
+
+	public void clickOnConfirmPasswordEyeImage() {
+		Action.clickUsingJavaScript(driver, confirmPasswordEye);
 	}
 	
-	public void clickOnPramotionalEmailCheckbox()
+	public String getConfirmPasswordSRCAttribute()
 	{
+		return confirmPasswordEye.getAttribute("src");
+	}
+
+	public void clickOnPramotionalEmailCheckbox() {
 		Action.click(promotionalEmailCheckbox);
 	}
-	
-	public void clickOnTermsAndConditionCheckbox()
-	{
+
+	public void clickOnTermsAndConditionCheckbox() {
 		Action.click(termsAndConditionsCheckbox);
 	}
-	
-	public String getPasswordText()
-	{
+
+	public String getPasswordText() {
 		Action.waitForElementToBeVisible(passwordField, 10);
 		return passwordField.getAttribute("value");
 	}
-	
-	public String getConfirmPasswordText()
-	{
+
+	public String getConfirmPasswordText() {
 		Action.waitForElementToBeVisible(confirmPasswordField, 10);
 		return confirmPasswordField.getAttribute("value");
 	}
+
+	public String getEmailValidationMsg() {
+		return emailValidationMsg.getText();
+	}
+
+	public String getPasswordValidationMsg() {
+		return passwordValidationMsg.getText();
+	}
+
+	public String getConfirmPassValidationMsg() {
+		return confirmPassValidationMsg.getText();
+	}
+
+	public String getUsernameValidationMsg() {
+		return usernameValidationMsg.getText();
+	}
+
+	public void enterEmailId() {
+		Action.enterText(emailAddressField, "gahsh");
+	}
+
+	public void enterPassword() {
+		Action.enterText(passwordField, "gahs2h");
+	}
+
+	public void enterConfirmPassword() {
+		Action.enterText(confirmPasswordField, "ga21sh");
+	}
+
+	public void enterUsername() {
+		Action.scrollByVisibilityOfElement(usernameField);
+		Action.enterText(usernameField, "gah");
+	}
+
+	public void enterPhoneNumber() {
+		Action.enterText(phoneTextField, "agsb");
+	}
+
+	public String getPhoneValidationMsg() {
+		return phoneValidationMsg.getText();
+	}
+
+	public String validateDayLightMode() {
+		Action.waitForElementToBeVisible(dayLightBtn, 10);
+		String actualSrc = dayLightBtn.getAttribute("src");
+		return actualSrc;
+	}
+
+	public void clickOnDayLightButton() {
+		Action.click(dayLightBtn);
+	}
+
 }

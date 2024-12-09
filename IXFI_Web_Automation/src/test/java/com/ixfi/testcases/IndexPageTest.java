@@ -120,12 +120,12 @@ public class IndexPageTest extends BaseClass {
 		Log.info("Retrieved the header menu list from web");
 		// Verify that the header has the expected number of items
 		// index.printHeaderMenuList();
-		int expectedItemCount = 15; // Adjust this to the number of expected menu items
+		int expectedItemCount = 16; // Adjust this to the number of expected menu items
 		Assert.assertEquals(menuItems.size(), expectedItemCount, "Number of menu items mismatch");
 
 		// Verify the presence of each menu item
 		String[] expectedMenuItems = { "Buy Crypto", "Markets", "Trade", "", "", "Rewards Program", "", "", "", "", "",
-				"", "Research", "", "" };
+				"", "Research", "", "", "IXFI Token" };
 
 		for (int i = 0; i < menuItems.size(); i++) {
 			String actualMenuItemText = menuItems.get(i).getText().trim();
@@ -148,8 +148,9 @@ public class IndexPageTest extends BaseClass {
 
 		for (int i = 0; i < convertMenuItems.size(); i++) {
 			String actualConvertMenuItemText = Action.standardizeText(convertMenuItems.get(i).getText());
+			Log.info("Actual Menu: "+actualConvertMenuItemText);
 			String expectedConvertMenuItemText = Action.standardizeText(expectedConvertMenuItems[i]);
-
+			Log.info("Expected Menu: "+expectedConvertMenuItemText);
 			// System.out.println("Actual: " + actualConvertMenuItemText);
 			// System.out.println("Expected: " + expectedConvertMenuItemText);
 
@@ -305,9 +306,9 @@ public class IndexPageTest extends BaseClass {
 				"verifyLangaugeButtonIsClickableUnderHamburgerMenuAndUserIsAbleToExtractTheLanguagesAndClickOnThemTest");
 		List<WebElement> langauegs = index.validateLanguageButtonUnderHambugerMenuIsClickable();
 		Log.info("User is clicked on Hambergur Menu and Language Button Under it");
-		Log.info("Extracted the Languages: " + langauegs.get(0).getText() + " And " + langauegs.get(1).getText());
+		Log.info("Extracted the Languages and Language Count is: " + langauegs.size());
 		for (WebElement lang : langauegs) {
-			System.out.println("Langauge: " + lang.getText());
+			Log.info("Langauge: " + lang.getText());
 			if (lang.getText().contains("Română")) {
 				lang.click();
 				// index.clickOnLimbaButton();

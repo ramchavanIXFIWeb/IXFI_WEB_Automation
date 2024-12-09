@@ -15,11 +15,11 @@
 
 				</methods> -->
 			</class>
-				<!--	<class name="com.ixfi.testcases.IndexPageTest">
+					<class name="com.ixfi.testcases.IndexPageTest">
 			<methods>
 					<exclude name="verifyThePresenceOfHeaderMenu" />
 				</methods>
-			</class>-->
+			</class>
 		</classes>
 	</test> <!--
 	Test -->
